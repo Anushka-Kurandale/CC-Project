@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/3477ae541c.js" crossorigin="anonymous"></script>
+  <title>College Website</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a href="#home" class="logo">YASHODA VRUDDHASHRAM</a>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#contact">contact</a>
+    </nav>
+    <i class="fa-solid fa-bars"></i>
+</header>
+
+
+<div class="home" id="home">
+  <div class="swiper home-slid">
+      <div class="swiper-wrapper">
+
+          <div class="swiper-slide box">
+              <div class="image">
+                  <img src="image5.png" alt="image">
+              </div>
+          </div>
+
+         
+
+
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+</div>
+
+<section class="about" id="about">
+  <div class="heading">
+      <h2>more information</h2>
+      <div></div>
+  </div>
+
+  <div class="box">
+      <div class="image">
+          <img src="back7.jpg" alt="image">
+      </div>
+      <div class="content">
+          <h3>about Vruddhashram</h3>
+          <p>At Yashoda Vruddhashram, we are dedicated to providing compassionate care and a nurturing environment for the elderly, ensuring their dignity and well-being.</p>
+        <p>We believe in fostering a sense of community and belonging, where seniors can engage in meaningful activities and social interactions. With a focus on holistic care, we strive to enhance the quality of life for each resident, addressing their physical, emotional, and spiritual needs.</p>
+        <p>Our experienced staff members are committed to creating a supportive and safe environment, where residents feel valued and respected. Through personalized care plans and regular assessments, we tailor our services to meet the unique needs of each individual.</p>
+        <p>In addition to our residential care services, we also offer a range of recreational and therapeutic activities to promote physical health and mental well-being. </p>
+        <p>With our warm and welcoming atmosphere, we strive to create a home away from home for our residents, where they can live with independence, dignity, and joy.</p>
+          
+         
+      </div>
+  </div>
+</section>
+
+
+<section class="contact" id="contact">
+  <div class="heading">
+      <h2 class="head">contact us</h2>
+      <div></div>
+  </div>
+  <div class="box">
+      <div class="content">
+          <i class="fa-solid fa-mobile-screen"></i>
+          <div>call: +91 8496 045 045</div>
+          <div>monday-friday (9am-6pm) </div>
+      </div>
+      <div class="content">
+          <i class="fa-solid fa-envelope"></i>
+          <div>email: enquiry@yashoda.org</div>
+          <div>web: https://yashoda.org/</div>
+      </div>
+      <div class="content">
+          <i class="fa-solid fa-location-dot"></i>
+          <div>location: Pune Maharashtra</div>
+          <div>Maharashtra</div>
+      </div>
+  </div>
+  <div class="row">
+      <div class="ifarm">   
+      </div>
+
+  <div class="form-c">
+      <form action="/contact", method="post">
+          <input type="text" id="name" name="name" placeholder="Enter your name" required autocomplete="off">
+          <input type="email" id="email" name="email" placeholder="email" required autocomplete="off">
+          <input type="number" id="mobile" name="mobile" placeholder="contact no." required autocomplete="off">
+          <textarea name="message" id="message" placeholder="message" cols="30" rows="10"></textarea>
+          <input type="submit" value="send message">
+      </form>
+  </div>
+</div>
+</section>
+
+<footer class="footer">
+  <div class="content">
+      <h3>Vruddhashram</h3>
+      <p>Providing compassionate care for our elders.</p>
+      <div class="shar">
+          <i class="fa-brands fa-facebook">
+          </i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-twitter"></i>
+      </div>
+  </div>
+
+  <div class="link">
+      <h3>links</h3>
+      <a href="#home">home</a>
+      <a href="#about">about</a>
+      <a href="#contact">contact</a>
+  </div>
+  
+</footer>
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script>
+    let Navbar = document.querySelector('.navbar');
+    let Fabars = document.querySelector('.fa-bars');
+
+          Fabars.onclick = () =>{
+          Navbar.classList.toggle("active")
+        };
+
+       var swiper = new Swiper(".home-slid", {
+      navigation: {
+     nextEl: ".swiper-button-next",
+     prevEl: ".swiper-button-prev",
+   },
+ });
+</script>
+
+</body>
+</html>
